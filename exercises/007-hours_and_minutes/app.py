@@ -1,6 +1,10 @@
 def hours_minutes(seconds):
-  # Your code here
-  return None
+    # Calcular horas y minutos
+    horas = int(seconds / 3600)
+    minutos = int((seconds % 3600) / 60)
+    
+    # Retornar el resultado en formato de cadena
+    return str(horas) + ", " + str(minutos)
 
-# Invoke the function and pass any integer as its argument
+# Invocar la función con 3900 segundos
 print(hours_minutes(3900))
