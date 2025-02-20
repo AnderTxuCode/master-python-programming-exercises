@@ -13,14 +13,14 @@ def valid_password(contrasena):
             isalphabe = 1
         elif (contrasena[i]=="$" or contrasena[i]=="#" or contrasena[i]=="@"):
             isdollar = 1
-        if (len(contrasena) >= 6 and len(contrasena) <= 12):
+    if (len(contrasena) >= 6 and len(contrasena) <= 12):
             longitud = 1
-        if (isupper == 1 and  isalphabe == 1 and  isdollar == 1 and  longitud == 1):
+    if (isupper == 1 and  isalphabe == 1 and  isdollar == 1 and  longitud == 1):
             return "Valid password"
     return "Not Valid password"
 
 
-print(valid_password("ABd4@"))
+print(valid_password("ABd4@sd"))
 
 
 
